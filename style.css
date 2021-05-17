@@ -1,0 +1,125 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+/* typography */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+.body{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+}
+.name, .number{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: hsl(229, 23%, 23%);
+}
+.category, .age, .place{
+    color: hsl(227, 10%, 46%);
+}
+.age{
+    font-size: 18px;
+}
+
+
+/*layout*/
+body{
+    position: relative;
+    overflow: hidden;
+    background-color: hsl(185, 75%, 39%);
+}
+.top-bg{
+    position: absolute;
+    left: -20%;
+    transform: translateY(-40%);
+}
+.bottom-bg{
+    position: absolute;
+    top: 50%;
+    right: -30%;
+}
+@media (max-width: 375px)
+{
+    .top-bg{
+        left: -200%;
+        top: -80%;
+    }
+    .bottom-bg{
+        top: 40%;
+        right: -200%;
+    }
+}
+.container{
+    position: relative;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 25%;
+}
+@media (max-width: 375px)
+{
+    .container{
+        width: 85%;
+        margin-top: 30%;
+    }
+}
+.header > img{
+    width: 100%;
+    border-radius: 20px 20px 0 0 ;
+}
+.profile-pic > img{
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    left: 34%;
+    border: 8px solid white;
+}
+@media (max-width: 375px){
+  .profile-pic> img{
+    width: 35%;
+    top: 20%;
+  }
+}
+.main-info{
+    display: flex;
+    justify-content: center;
+}
+
+.place{
+    display: flex;
+    justify-content: center;
+}
+.stats{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*formatting*/
+.container{
+    border-radius: 20px;
+    margin-top: 10%;
+}
+.main-info{
+    margin-top: 5rem;
+    margin-bottom: 0.5rem;
+}
+.name{
+    margin-right: 0.75rem;
+}
+.place{
+    margin-bottom: 1.5rem;
+}
+.stats{
+    margin-top: 1.5rem;
+    margin-bottom: 1.25rem;
+    text-align: center;
+    line-height: 1.5rem;
+}
+hr{
+    background-color: hsl(0,5%,90%);
+    margin: 15px 0px;
+    border-width: 0;
+    height: 1px;
+}
